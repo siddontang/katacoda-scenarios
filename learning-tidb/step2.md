@@ -57,7 +57,7 @@ We can also use `select * from employees;`{{execute T2}} to retrieve all the row
 
 Sometimes, if we want to get the distinct rows, we can use the `distinct` keyword in the query, like:
 
-`select distinct customer_id from orders;`{{execute T2}}
+`select distinct city from employees;`{{execute T2}}
 
 ## Select Limited Rows
 

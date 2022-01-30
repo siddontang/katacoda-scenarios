@@ -15,35 +15,35 @@
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Query the data Orderly",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Query and filter the data",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Query and aggregate the data",
         "text": "step5.md"
       },
       {
-        "title": "Step 6",
+        "title": "Query with functionw",
         "text": "step6.md"
       },
       {
-        "title": "Step 7",
+        "title": "Subquery",
         "text": "step7.md"
       },
       {
-        "title": "Step 8",
+        "title": "Query and join the data",
         "text": "step8.md"
       },
       {
-        "title": "Step 9",
+        "title": "Insert/Update/Delete data",
         "text": "step9.md"
       },
       {
-        "title": "Step 10",
+        "title": "Transaction",
         "text": "step10.md"
       }
     ],
