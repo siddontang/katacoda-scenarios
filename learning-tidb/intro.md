@@ -1,5 +1,7 @@
 # Learning TiDB step by step
 
+Notice: **help wanted**, feel free to contribute to this tutorial [here](https://github.com/siddontang/katacoda-scenarios/tree/main/learning-tidb)
+
 ## Description
 
 [TiDB](https://github.com/pingcap/tidb) is an open-source NewSQL database that supports Hybrid Transactional and Analytical Processing (HTAP) workloads. 
