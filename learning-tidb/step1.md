@@ -22,7 +22,7 @@ Start a TiDB cluster locally with following command:
 ```sh
 nohup tiup playground --tag test --pd.host [[HOST_IP]] --tiflash 0 nightly 2>&1 &
 
-clear
+sleep 1 && clear
 ```{{execute}}
 
 We can use `tail -f nohup.out` to check whether TiDB has already been started or not. If we see the following sentenses, we can go on:
@@ -42,7 +42,7 @@ TiDB is MySQL compatible, so we can use any MySQL client to connect to TiDB.
 
 Connect to TiDB
 
-`mysql -h 127.0.0.1 -P 4000 -uroot`{{execute interrupt}}
+`mysql -h 127.0.0.1 -P 4000 -uroot`{{execute}}
 
 
 If we use TiDB cloud, we can click the Connect button and get the access like like:
