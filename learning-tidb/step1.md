@@ -19,7 +19,21 @@ We can also a Develop Tier directly on [TiDB cloud](https://tidbcloud.com/) dire
 
 Start a TiDB cluster locally with following command:
 
-`tiup playground --tag test --pd.host [[HOST_IP]] --tiflash 0 nightly`{{execute}}
+```sh
+nohup tiup playground --tag test --pd.host [[HOST_IP]] --tiflash 0 nightly 2>&1 &
+
+clear
+```{{execute}}
+
+We can use `tail -f nohup.out` to check whether TiDB has already been started or not. If we see the following sentenses, we can go on:
+
+```bash
+To connect TiDB: mysql --comments --host 127.0.0.1 --port 4000 -u root -p (no password)
+To view the dashboard: http://172.17.0.72:2379/dashboard
+PD client endpoints: [172.17.0.72:2379]
+To view the Prometheus: http://127.0.0.1:9090
+To view the Grafana: http://127.0.0.1:3000
+```
 
 ## Use TiDB
 
@@ -28,7 +42,7 @@ TiDB is MySQL compatible, so we can use any MySQL client to connect to TiDB.
 
 Connect to TiDB
 
-`mysql -h 127.0.0.1 -P 4000 -uroot`{{execute T2}}
+`mysql -h 127.0.0.1 -P 4000 -uroot`{{execute interrupt}}
 
 
 If we use TiDB cloud, we can click the Connect button and get the access like like:
@@ -37,12 +51,12 @@ If we use TiDB cloud, we can click the Connect button and get the access like li
 
 Create the northwind database
 
-`source ~/northwind/northwind.sql;`{{execute T2}}
+`source ~/northwind/northwind.sql;`{{execute}}
 
 Prepare northwind data
 
-`source ~/northwind/northwind-data.sql;`{{execute T2}}
+`source ~/northwind/northwind-data.sql;`{{execute}}
 
 Have a fun:
 
-`select count(*) from customers;`{{execute T2}}
+`select count(*) from customers;`{{execute}}

@@ -2,7 +2,7 @@
 
 Sometimes, when we retrieve some rows, we find that the result rows are not ordered.
 
-`select email_address from employees;`{{execute T2}}
+`select email_address from employees;`{{execute}}
 
 ```bash
 +------------------------------+
@@ -23,7 +23,7 @@ Sometimes, when we retrieve some rows, we find that the result rows are not orde
 If we want to get a ordered result, we can use `order by` clause, like:
 
 
-`select email_address from employees order by email_address;`{{execute T2}}
+`select email_address from employees order by email_address;`{{execute}}
 
 ```bash
 +------------------------------+
@@ -46,7 +46,7 @@ If we want to get a ordered result, we can use `order by` clause, like:
 
 We can use `order by` to sort multi columns, e.g. 
 
-`select first_name, last_name, job_title from employees;`{{execute T2}}
+`select first_name, last_name, job_title from employees;`{{execute}}
 
 ```bash
 +------------+----------------+-----------------------+
@@ -66,7 +66,7 @@ We can use `order by` to sort multi columns, e.g.
 
 If we want to sort by `job_title` at first, then by `first_name`, we can use below:
 
-`select job_title, first_name, last_name from employees order by job_title, first_name;`{{execute T2}}
+`select job_title, first_name, last_name from employees order by job_title, first_name;`{{execute}}
 
 ```bash
 +-----------------------+------------+----------------+
@@ -89,7 +89,7 @@ If we want to sort by `job_title` at first, then by `first_name`, we can use bel
 
 The default order direction is ascending, we can use `desc` to descending sort:
 
-`select job_title, first_name, last_name from employees order by job_title, first_name desc;`{{execute T2}}
+`select job_title, first_name, last_name from employees order by job_title, first_name desc;`{{execute}}
 
 ```bash
 +-----------------------+------------+----------------+
@@ -111,7 +111,7 @@ As we can see, in the above result, `Robert` is the first one with the same job 
 
 We can add `desc` to any column, e.g.
 
-`select job_title, first_name, last_name from employees order by job_title desc, first_name;`{{execute T2}}
+`select job_title, first_name, last_name from employees order by job_title desc, first_name;`{{execute}}
 
 ```bash
 +-----------------------+------------+----------------+
@@ -131,7 +131,7 @@ We can add `desc` to any column, e.g.
 
 Or to all columns in the order by clause:
 
-`select job_title, first_name, last_name from employees order by job_title desc, first_name desc;`{{execute T2}}
+`select job_title, first_name, last_name from employees order by job_title desc, first_name desc;`{{execute}}
 
 ```bash
 +-----------------------+------------+----------------+
@@ -148,3 +148,4 @@ Or to all columns in the order by clause:
 | Sales Coordinator     | Laura      | Giussani       |
 +-----------------------+------------+----------------+
 ```
+
